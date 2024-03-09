@@ -12,7 +12,10 @@ public class PetStoreCustomer {
 	private String customerLastName;
 	private String customerEmail;
 	
-	PetStoreCustomer(Customer customer){
-		
+	public PetStoreCustomer(Customer customer){
+		customerId = customer.getCustomerId();
+		customerFirstName = customer.getCustomerFirstName();
+		customerLastName = customer.getCustomerLastName();
+		customerEmail = customer.getCustomerEmail();
 	}
 }
